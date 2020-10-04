@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Shopping Cart</mat-card-title>
+    </mat-card-header>
+    <mat-list role="list" class="mat-list">
+        <mat-list-item role="listitem" *ngFor="let item of cart; let id=index">
+            <label>{{id+1}}.</label>
+            <label>{{item.title}}</label>
+            <label>{{item.price | currency}}</label>
+        </mat-list-item>
+    </mat-list>
+    <mat-card-actions>
+        <button mat-button>Make Payment</button>
+        <button mat-icon-button color="primary" (click)="showHome()">
+            <mat-icon>arrow_back</mat-icon>Continue Shopping
+        </button>
+    </mat-card-actions>
+</mat-card>

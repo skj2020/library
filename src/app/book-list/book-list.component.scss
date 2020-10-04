@@ -1,0 +1,14 @@
+.list-header {
+    text-align: center;
+}
+.book-card {
+    width: 400px;
+    overflow: hidden;
+    margin: 16px 0;
+    .mat-card-image {
+        width: auto;
+    }
+    .card-content {
+        float: right;
+    }
+}
